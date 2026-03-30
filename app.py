@@ -8,7 +8,7 @@ import json
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'votre_cle_secrete_ici' # Changez ceci en production
-app.config['SQLALCHEMY_DATABASE_DATA_URI'] = 'sqlite:///radar.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///radar.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
